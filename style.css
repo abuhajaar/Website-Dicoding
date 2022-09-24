@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border;
+  font-family: 'Roboto Mono', monospace;
+}
+:root {
+  --coklat: #562c2c;
+  --oren: #f2542d;
+  --cream: #f5dfbb;
+  --biru: #0e9594;
+  --hijau: #127475;
+  --hitam: #222;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  background-color: var(--cream);
+  z-index: 10;
+  border-bottom: 1px outset var(--coklat);
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  padding: 20px;
+  margin-right: auto;
+}
+
+img {
+  height: 50px;
+}
+.logo {
+  color: var(--hijau);
+  align-items: center;
+  padding-left: 10px;
+  transition: 1s;
+}
+.logo:hover {
+  transform: rotate(2deg);
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: var(--hitam);
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+li a::after {
+  content: '';
+  width: 0%;
+}
+
+li a::after:hover {
+  width: 100%;
+}
+
+li a:hover {
+  background-color: var(--hijau);
+  color: white;
+  border-radius: 0 10px 0 10px;
+}
+ul {
+  display: flex;
+
+  margin-right: 25px;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: medium;
+  padding: 10px 50px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: beige;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.1);
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+main {
+  object-fit: contain;
+  width: 100%;
+  background-image: url('assets/img/test.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--cream);
+  align-items: center;
+  justify-content: center;
+}
+article {
+  height: 100vh;
+}
+.lottie {
+  height: 500px;
+  width: 500px;
+}
+.contentlottie {
+  display: flex;
+  flex-direction: column;
+}
+.contentdesc {
+  display: flex;
+  flex-direction: column;
+}
+.content1 {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.content2 {
+  padding-top: 10vh;
+  background-color: var(--cream);
+  height: 100vh;
+}
+.artikel1 {
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+}
+
+.halo {
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--oren);
+}
